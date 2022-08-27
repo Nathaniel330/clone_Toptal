@@ -10,3 +10,7 @@
 #talentCategories {
     background-color: rgb(223, 223, 223);
 }
+
+#clip {
+    overflow: hidden;
+}
