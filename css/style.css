@@ -1,3 +1,22 @@
+.icon {
+    width: 100px;
+    height: auto;
+}
+
+.small {
+    width: 90px;
+    height: auto;
+}
+
+.smaller {
+    width: 75px;
+    height: auto;
+}
+
+.meet {
+    width: 200px;
+    height: 100%;
+}
 .hire {
     background-color: #00cc83;
     color: white;
@@ -7,10 +26,157 @@
     background-color: #f6f8fb;
 }
 
+/* asset gallery */
+/* .assetList {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+} */
+
+.assetItem {
+    display: inline-block;
+    inline-size: 50vw;
+    margin-bottom: 0;
+    white-space: normal;
+    border: solid black;
+}
+
+.assetImg {
+    height: 23vh;
+}
 #talentCategories {
     background-color: rgb(223, 223, 223);
 }
+/* style for "why organizations choose toptal */
+#bridgestoneWhy {
+    height: 60vh;
+    background-image: url("../img/bridgestonewhy.jpg");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#cavaliersWhy {
+    height: 60vh;
+    background-image: url("../img/cavswhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#csrWhy {
+    height: 60vh;
+    background-image: url("../img/csrwhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#uscWhy {
+    height: 60vh;
+    background-image: url("../img/uscwhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#adcrushWhy {
+    height: 60vh;
+    background-image: url("../img/adcrushwhy2cropped.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#motoWhy {
+    height: 60vh;
+    background-image: url("../img/motorolawhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#salesWhy {
+    height: 60vh;
+    background-image: url("../img/salesforcewhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
+
+#msoftWhy {
+    height: 60vh;
+    background-image: url("../img/microsoftwhy.png");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0009; background-blend-mode: darken;
+}
 
 #clip {
+    height: 60vh;
+    background-image: url("../img/preview.jpg");
+    background-size: 100% 60vh;
+    background-repeat: no-repeat;
+    background-color: #0005; background-blend-mode: darken;
     overflow: hidden;
+}
+
+.whyImg {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 2px;
+    /* background-color: white; */
+    width: 150px;
+}
+
+.whyImgWhite {
+    margin-top: 20px;
+    margin-bottom: 70px;
+    padding: 2px;
+    background-color: white;
+    width: 150px;
+}
+
+.consumer {  /* image size for consumers || "hear from our clients" section */
+    width: 50px;
+    height: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* author image display in publications || START*/
+.authorImg {
+    width: 50px;
+    height: 50px;
+}
+
+#basis {
+    position: relative;
+}
+
+.authorImgPosition {
+    position: absolute;
+    top: -25px;
+}
+/* author image display in publications || END*/
+
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+    /* .publicationImg {
+        height: 170px;
+    } */
+    .publication {
+        width: 500px;
+    }
+}
+
+@media (min-width: 992px) {
+    .publication {
+        width: 241.8px;
+    }
 }

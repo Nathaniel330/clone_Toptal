@@ -12,50 +12,26 @@
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/8fe3227aac.js" crossorigin="anonymous"></script>
     <title>clone_Toptal</title>
-    <style>
-        .icon {
-            width: 100px;
-            height: auto;
-        }
-
-        .small {
-            width: 90px;
-            height: auto;
-        }
-
-        .smaller {
-            width: 75px;
-            height: auto;
-        }
-
-        .meet {
-            width: 200px;
-            height: 100%;
-        }
-    </style>
 </head>
 <body>
     <nav style="height:9vh">
         NAVBAR NAVBAR NAVBAR <!--skip navbar // header part.. a little overwhelming-->
     </nav>
-    <div class="bg-secondary">
-        
-    </div>
 
     <div class="d-flex flex-column bg-secondary text-center">
-        <div class="" style="height:42vh">
+        <div class="p-3 pt-0" style="height:36vh">
             <p class="fs-2 m-3 mt-0 text-center">Hire the Top 3% of Freelance Talent®</p>
-            <p class="text-center">Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.</p>
+            <p class="text-center"><small>Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.</small></p>
             <button class="hire btn col-6">Hire top talent</button>
         </div>
 
-        <div class="" style="height:42vh">
-
+        <div id="asset" class="" style="height:30vh">
+            <div><img src="./img/meet/Sasuke_Part_1.webp" class="img-fluid meet" alt=""></div>
         </div>
     </div>
 
-    <div id="slide" class="p-3">
-        <div class="text-center form-text">TRUSTED BY LEADING BRANDS AND STARTUPS</div>
+    <div id="slide" class="p-4">
+        <div class="text-center mb-3 form-text">TRUSTED BY LEADING BRANDS AND STARTUPS</div>
         <div class="d-flex justify-content-center">
             <div><img class="slide-one" src="./img/duolingo.svg" alt=""></div>
             <div><img class="slide-one" src="./img/pricline.svg" alt=""></div>
@@ -65,7 +41,91 @@
             <div><img class="slide-two" src="./img/bridgestone.svg" alt=""></div>
         </div>
     </div>
-    
+
+    <!--assetGallery-->
+    <!--<i class="fa-solid fa-calendar-check"></i>
+    <i class="fa-solid fa-pen-fancy"></i>
+    <i class="fa-solid fa-chart-line"></i>
+    <i class="fa-solid fa-code"></i>-->
+    <div class="">
+        <div class="row overflow-auto text-nowrap">
+            <div class="col">
+                <div class="assetItem">
+                    <img src="./img/meet/Mikasa_Ackermann_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Mikasa_Ackermann_(Anime)" class="text-decoration-none">Mikasa Ackermann</a><br>
+                        <i class="fa-solid fa-pen-fancy"></i> UX/UI Designer
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Eren_Jaeger_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Eren_Jaeger_(Anime)" class="text-decoration-none">Eren Jaeger</a><br>
+                        <i class="fa-solid fa-code"></i> C# Developer
+                    </p> 
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Annie_Leonhart_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Annie_Leonhart_(Anime)" class="text-decoration-none">Annie Leonhart</a><br>
+                        <i class="fa-solid fa-pen-fancy"></i> Product Designer
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Historia_Reiss_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Historia_Reiss_(Anime)" class="text-decoration-none">Historia Reiss</a><br>
+                        <i class="fa-solid fa-calendar-check"></i> Scrum Master
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Tobirama_Senju.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://naruto.fandom.com/wiki/Tobirama_Senju" class="text-decoration-none">Tobirama Senju</a><br>
+                        <i class="fa-solid fa-calendar-check"></i> Product Manager
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Madara_img2.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://naruto.fandom.com/wiki/Madara_Uchiha" class="text-decoration-none">Madara Uchiha</a><br>
+                        <i class="fa-solid fa-calendar-check"></i> Product Owner
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Hange_Zoe.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Hange_Zo%C3%AB_(Anime)" class="text-decoration-none">Hange Zoe</a><br>
+                        <i class="fa-solid fa-chart-line"></i> Finance Expert
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Levi_Ackermann_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Levi_Ackermann_(Anime)" class="text-decoration-none">Levi Ackermann</a><br>
+                        <i class="fa-solid fa-chart-line"></i> M&A Expert
+                    </p>
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Armin_Arlelt_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Armin_Arlelt_(Anime)" class="text-decoration-none">Armin Arlelt</a><br>
+                        <i class="fa-solid fa-code"></i> JavaScript Developer
+                    </p> 
+                </div>
+                <div class="assetItem">
+                    <img src="./img/meet/Jean_Kirschtein_29_character_image_29.webp" class="img-fluid assetImg" alt="">
+                    <p class="p-2">
+                        <a href="https://attackontitan.fandom.com/wiki/Jean_Kirschtein_(Anime)" class="text-decoration-none">Jean Kirschtein</a><br>
+                        <i class="fa-solid fa-code"></i> Python Developer
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="p-1"> <!--Leverage World Class Talent-->
         <div class="m-auto col-12 col-md-6">
         <p class="display-5 text-center mb-5">Leverage World-Class Talent</p>
@@ -128,7 +188,7 @@
 
     <div id="buildDiv" class="text-center p-5"> <!--Build Amazing Teams, On Demand-->
         <div>
-            <p class="fw-bold display-4">Build Amazing Teams, On Demand</p><br>
+            <p class="display-6">Build Amazing Teams, On Demand</p><br>
             <p class="">Quickly assemble teams you need, exactly when you need them.</p><br><br>
         </div>
         <div>
@@ -162,7 +222,7 @@
     </div>
     
     <div id="madeEasy" class="container p-2 mb-5"> <!--Hiring Made Easy-->
-        <p class="fw-bold display-4 text-center mb-5">Hiring Made Easy</p>
+        <p class="display-4 text-center mb-5">Hiring Made Easy</p>
         <div class="d-flex flex-md-column">
             <div class="d-none d-md-block d-lg-none"><img src="./img/arrow-right.png" class=img-fluid alt=""></div>
             <div class="d-none d-lg-block"><img src="./img/arrow-to-right.png" class=img-fluid alt=""></div>
@@ -185,7 +245,7 @@
     </div>
 
     <div class="mx-3" id="network"> <!--Meet Talent in Our Network-->
-        <p class="fw-bold display-4 text-center mb-5">Meet Talent in Our Network</p>
+        <p class="display-6 text-center mb-5">Meet Talent in Our Network</p>
         <ul class="list-group list-group-horizontal overflow-auto text-nowrap">
             <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#dev">Developers</button>
             <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#des">Designers</button>
@@ -205,7 +265,7 @@
                         <p class="form-text">JavaScript Developer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/shopify.svg" alt="">
+                            <img src="./img/shopify.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -216,7 +276,7 @@
                         <p class="form-text">Java Developer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/Google.svg" alt="">
+                            <img src="./img/Google.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -227,7 +287,7 @@
                         <p class="form-text">Python Developer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/Exxon.svg" alt="">
+                            <img src="./img/Exxon.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -243,7 +303,7 @@
                         <p class="form-text">Product Designer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/apple.svg" alt="">
+                            <img src="./img/apple.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -254,7 +314,7 @@
                         <p class="form-text">UX/UI Designer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/lego.svg" alt="">
+                            <img src="./img/lego.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -265,7 +325,7 @@
                         <p class="form-text">Visual Designer</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/fb.svg" alt="">
+                            <img src="./img/fb.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -281,7 +341,7 @@
                         <p class="form-text">M&A Expert</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/bain&co.svg" alt="">
+                            <img src="./img/bain&co.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -292,7 +352,7 @@
                         <p class="form-text">Market Researcher</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/bain&co.svg" alt="">
+                            <img src="./img/bain&co.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -303,7 +363,7 @@
                         <p class="form-text">Interim CFO</p><br>
                         <div>
                             <p class="form-text mb-2">Previously at</p>
-                            <img src="./img/goldman.svg" alt="">
+                            <img src="./img/goldman.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -319,7 +379,7 @@
                         <p class="form-text">Agile Project Manager</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/amazon.svg" alt="">
+                            <img src="./img/amazon.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -330,7 +390,7 @@
                         <p class="form-text">Mobile Project Manager</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/vodafone.svg" alt="">
+                            <img src="./img/vodafone.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -341,7 +401,7 @@
                         <p class="form-text">IT Project Manager</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/morganstanley.svg" class="pt-3" alt="">
+                            <img src="./img/morganstanley.svg" class="pt-3 img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -357,7 +417,7 @@
                         <p class="form-text">Product Owner</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/at&t.svg" alt="">
+                            <img src="./img/at&t.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -368,7 +428,7 @@
                         <p class="form-text">Interim CPO</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/microsoft.svg" alt="">
+                            <img src="./img/microsoft.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -379,7 +439,7 @@
                         <p class="form-text">Product Manager</p><br>
                         <div>
                             <p class="form-text mb-0">Previously at</p>
-                            <img src="./img/spacex.svg" alt="">
+                            <img src="./img/spacex.svg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -387,25 +447,166 @@
         </div>
     </div>
 
-    <div>
-        <p>Why Organizations Choose Toptal</p>
-        <p>Discover the many ways in which our clients have embraced the benefits of the Toptal network.</p>
-        <div></div>
+    <div class="p-4">
+        <div>
+            <div>
+                <p class="display-6 text-center mb-4">Why Organizations Choose Toptal</p>
+                <p class="text-center">Discover the many ways in which our clients have embraced the benefits of the Toptal network.</p>
+            </div>
+            <div id="bridgestoneWhy" class="mb-4 p-4">
+                <img src="./img/20161107050922!Bridgestone_logo.svg" class="whyImgWhite" alt="">
+                <p class="text-light fw-light h3">Building a cross-platform app to be used worldwide</p>
+            </div>
+            <div id="cavaliersWhy" class="mb-4 p-4">
+                <img src="./img/cleveland-cavaliers.png" class="whyImg" alt="">
+                <p class="text-light fw-light h3">Creating an app for the game</p>
+            </div>
+        </div>
+
+        <div>
+            <div id="csrWhy" class="mb-4 p-4">
+                <img src="./img/csr-limited-logo-vector.jpg" class="whyImg" alt="">
+                <p class="text-light fw-light h3">Leading a digital transformation</p>
+            </div>
+            <div id="uscWhy" class="mb-4 p-4">
+                <img src="./img/University-of-Southern-California-logo.jpg" class="whyImg" alt="">
+                <p class="text-light fw-light h3">Developing a virtual assistant to improve mental wellness</p>
+            </div>
+            <div id="adcrushWhy" class="mb-4 p-4">
+                <img src="./img/Adcrush_logo.png" class="whyImg" alt="">
+                <p class="text-light fw-light h3">Scaling revenue with marketing automation</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="p-2">
+                <p class="display-6 text-center mb-4">Collaborations With Leading Brands</p>
+                <p class="text-center">We collaborate with a number of top tier companies on imagining the future of work, have a look.</p>
+            </div>
+            <div id="motoWhy" class="mb-4 p-4">
+                <img src="./img/Motorola_new_logo.svg" class="whyImgWhite" alt="">
+                <p class="text-light fw-light h3">The Opportunity Loop: An Inside Look at How to Attract and Retain Top Talent</p>
+            </div>
+            <div id="salesWhy" class="mb-4 p-4">
+                <img src="./img/Salesforce.com_logo.svg" class="whyImg" alt="">
+                <p class="text-light fw-light h3">Industry Perspective: Salesforce On Team Alignment and Agile Talent</p>
+            </div>
+            <div id="msoftWhy" class="mb-4 p-4">
+                <img src="./img/Microsoft_logo_(2012).svg" class="whyImgWhite" alt="">
+                <p class="text-light fw-light h3">Call to Action: the On-Demand Business Model</p>
+            </div>
+        </div>
+       
     </div>
 
-    <div id="clip">
-        <img src="./img/preview.jpg" alt="">
+    <div id="clip" class="mb-5 p-5 text-center">
+        <i class="fa-solid fa-quote-left fa-3x mt-5 mb-4" style="color:blue"></i>
+        <p class="text-light fw-light h4">We're known as a high-skilled marketplace, and we see an acute pain point within that area.</p>
     </div>
 
 
 
-    <div> Hear From Our Clients
 
+    <div class="p-4">
+        <p class="display-6 text-center">Hear From Our Clients</p>
+        <p class="text-center">trust pilot image with link</p>
+        <div class="d-md-flex">
+            <div class="p-4 shadow mb-3">
+                <i class="fa-solid fa-quote-left fa-2x" style="color:darkblue"></i><br><br>
+                <p>With the pressure on and millions watching the Cleveland Cavaliers during the NBA Playoffs, Toptal delivered the talent and expertise needed to launch a brand new fan engagement platform.</p>
+                <div class="d-flex">
+                    <div><img src="./img/consumer1.jpg" class="img-fluid consumer" alt=""></div>
+                    <div class="ms-2"><p><span class="bold">Connor Kenney, Director of Professional Services</span><br>Cleveland Cavaliers</p></div>
+                </div>
+            </div>
+
+            <div class="p-4 shadow mb-3">
+                <i class="fa-solid fa-quote-left fa-2x" style="color:darkblue"></i><br><br>
+                <p>With Toptal, we are able to find talented developers in a matter of weeks instead of months. The quality of talent they supply is extremely high as the developers are able to immediately onboard and ramp incredibly fast.</p>
+                <div class="d-flex">
+                    <div><img src="./img/consumer2.jpg" class="img-fluid consumer" alt=""></div>
+                    <div class="ms-2"><p><span class="bold">Zac Carman, CEO</span><br>ConsumerAffairs</p></div>
+                </div>
+            </div>
+
+            <div class="p-4 shadow mb-3 d-md-none">
+                <i class="fa-solid fa-quote-left fa-2x" style="color:darkblue"></i><br><br>
+                <p>We've been very pleased with our experience working with Toptal. Their team was incredibly helpful in helping us find the perfect developer for our project. The work was stellar, the communication was excellent and we couldn't have been happier with the overall experience. We're excited to work with Toptal for more projects in the future!</p>
+                <div class="d-flex">
+                    <div><img src="./img/consumer3.jpg" class="img-fluid consumer" alt=""></div>
+                    <div class="ms-2"><p class=""><strong>Ryan Walker, Director of Product</strong><br>Rand McNally</p></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div> Explore Trending Toptal Publications
 
+
+
+    <div class="p-4">
+
+        <div class="mb-5 text-center display-6">Explore Trending Toptal Publications</div>
+        <div class="d-lg-flex gap-5"> 
+
+            <div class="shadow-sm mb-5"> <!--publication block 1-->
+                <img src="./img/regular_500x200_javascript_issues-a3d6df8b947d51f5e3613faff9378083.png" style="width:100%" alt="">
+                <div id="basis" class="p-4">
+                    <h6 class="form-text fw-light mb-2">Engineering > Web Front-end</h6>
+                    <h5 class="">The 10 Most Common JavaScript Issues Developers Face</h5>
+                    <p class="">by <span class="bold">RYAN J. PETERSON</span></p>
+                    <img src="./img/retina1_64x64_huge_d70af5b9d2ad010f5d9b455917c18b08-b1329cf77e14498e0e23bc6d607bf82d.jpg" class="authorImg authorImgPosition" alt="">
+                </div> 
+            </div>
+            
+            <div class="">  <!--publication block 2-->
+                <div id="publicationA" class="d-md-flex gap-5">
+                    <div class="shadow-sm mb-5 publication">
+                        <img src="./img/regular_500x200_COVER-215407f432cc2fd0965a36d280a830cb.png" class="publicationImg" style="width:100%" alt="">
+                        <div id="basis" class="p-4">
+                            <h6 class="form-text fw-light mb-2">Projects > People and Teams</h6>
+                            <h5 class="">SAFe Case Studies: Transformation Notes From the Field</h5>
+                            <p class="">by <span class="bold">DANIEL CARROLL</span></p>
+                            <img src="./img/Daniel_Carrol-22adf18fa4cdcaf0ad971ede070f2b49.png" class="authorImg authorImgPosition" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-sm mb-5 publication">
+                        <img src="./img/regular_500x200_COVER-64c6c457b9ac690835269bc1493f8b3d.png" class="publicationImg" style="width:100%" alt="">
+                        <div id="basis" class="p-4">
+                            <h6 class="form-text fw-light mb-2">Projects > Tips and Tools</h6>
+                            <h5 class="">Agile Scaling: SAFe Best Practices for Scrum Masters</h5>
+                            <p class="">by <span class="bold">AMMAR RAAFAT MOHAMED</span></p>
+                            <img src="./img/retina3_64x64_huge_a77f9ba31d6071a340d75e07a1d4b4ac-873678155440fefec8072e5ff4913897.png" class="authorImg authorImgPosition" alt="">
+                        </div>
+                    </div>                   
+                </div>
+
+                <div id="publicationB" class="d-md-flex gap-5">
+                    <div class="shadow-sm mb-5 publication">
+                        <img src="./img/regular_500x200_COVER-dc12ddb89f33cfabb9caaa6abec0d7d2.png" class="publicationImg" style="width:100%" alt="">
+                        <div id="basis" class="p-4">
+                            <h6 class="form-text fw-light mb-2">Projects > Agile</h6>
+                            <h5 class="">5 Agile Scaling Frameworks Compared: Which One Should You Use?</h5>
+                            <p class="">by <span class="bold">KAMIL IMAŃSKI</span></p>
+                            <img src="./img/retina2_64x64_huge_bde2c937166b97686ca4901cf8981a4f-4b6129b8f4b384623ff1181c9ad7f4fa.jpg" class="authorImg authorImgPosition" alt="">
+                        </div>
+                    </div>
+                    <div class="shadow-sm mb-5 publication">
+                        <img src="./img/regular_500x200_0708_Finance_Four_Counterintuitive_Tips_to_Refine_Your_Pricing_Milena_Newsletter__blog2-ac5039911912826fda5e42f22a3ed382.png" class="publicationImg" style="width:100%" alt="">
+                        <div id="basis" class="p-4">
+                            <h6 class="form-text fw-light mb-2">Finance > Profitability and Efficiency</h6>
+                            <h5 class="">Name Your Price: 4 Counterintuitive Pricing Strategy Tips</h5>
+                            <p class="">by <span class="bold">KALIL GEBRIM RODRIGUES</span></p>
+                            <img src="./img/retina4_64x64_huge_6b3eda5a6aa5e25ca7ab1314ba385c68-a393e82dcd98a6dc64815407e9939feb.jfif" class="authorImg authorImgPosition" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+
+
+
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 <script src="./js/function.js"></script>
