@@ -1,16 +1,11 @@
-// let images = ["./", "photoFromInternet2", "photoFromInternet3"];
+/* to check if sticky nav activated */
+const el = document.querySelector("nav")
+const observer = new IntersectionObserver( 
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
 
-// let index = 0;
-// const imgElement = document.querySelector('#image-one');
-
-// function change() {
-//    imgElement.src = images[index];
-//    index > 1 ? index = 0 : index++;
-// }
-
-// window.onload = function () {
-//     setInterval(change, 5000);
-// };
+observer.observe(el);
 
 var slideIndex = 0;
 carousel();
@@ -41,11 +36,21 @@ function carousel2() {
     setTimeout(carousel2, 4000); 
 }
 
-/* to check if sticky nav activated */
-const el = document.querySelector("nav")
-const observer = new IntersectionObserver( 
-  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
 
-observer.observe(el);
+function currentSlide(n) {
+    showSlides(assetIndex = n);
+    console.log("clicked");
+}
+let assetIndex = 1;
+showSlides(assetIndex);
+
+function showSlides(n) {
+    let i;
+    let asset = document.getElementsByClassName("asset");
+    if (n > asset.length) {assetIndex = 1}
+    if (n < 1) {assetIndex = asset.length}
+    for (i = 0; i < asset.length; i++) {
+      asset[i].style.display = "none";
+    }
+    asset[assetIndex-1].style.display = "block";
+}
