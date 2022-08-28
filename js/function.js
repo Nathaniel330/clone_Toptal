@@ -40,3 +40,12 @@ function carousel2() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel2, 4000); 
 }
+
+/* to check if sticky nav activated */
+const el = document.querySelector("nav")
+const observer = new IntersectionObserver( 
+  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
+  { threshold: [1] }
+);
+
+observer.observe(el);

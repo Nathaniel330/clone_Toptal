@@ -14,13 +14,88 @@
     <title>clone_Toptal</title>
 </head>
 <body>
-    <nav style="height:9vh">
-        NAVBAR NAVBAR NAVBAR <!--skip navbar // header part.. a little overwhelming-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://www.toptal.com/"><img src="./img/logo-toptal.svg" class="navlogo" alt=""></a>
+
+            <!--additional content of the navbar @ lg view || VITAL "class=collapse navbar-collapse" -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/top-3-percent">Top 3%</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/why">Why</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/clients">Clients</a></li>
+                    <li class="nav-item dropdown"> <!--dropdown -->
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries</a>
+                        <ul class="dropdown-menu" id="industries">
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/healthcare">Healthcare and Life Sciences</a></li>
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/consumer-products">Consumer Products and Services</a></li>
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/financial-services">Financial Services</a></li>
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/industrials">Industrials</a></li>
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/media">Communications, Media, and Entertainment</a></li>
+                            <li><a class="dropdown-item my-2" href="https://www.toptal.com/industry/technology">Technology</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/community">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.toptal.com/about">About Us</a></li>
+                </ul>     
+            </div>
+              
+            <!-- xs-md view burger icon triggers a MODAL-->
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="modal" id="navbarModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="d-flex">
+                            <a class="navbar-brand ms-2 mt-2 me-auto" href="https://www.toptal.com/"><img src="./img/logo-toptal.svg" class="navlogo" alt=""></a>
+                            <button type="button" class="btn-close mt-3 me-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul class="list-group list-group-flush me-auto mb-2 mb-lg-0">
+                                <li class="list-group-item py-3"><a class="text-decoration-none text-dark" href="https://www.toptal.com/top-3-percent">Top 3%</a></li>
+                                <li class="list-group-item py-3"><a class="text-decoration-none text-dark" href="https://www.toptal.com/why">Why</a></li>
+                                <li class="list-group-item py-3"><a class="text-decoration-none text-dark" href="https://www.toptal.com/clients">Clients</a></li>
+                                <li class="list-group-item py-3"> <!--dropdown -->
+                                    <a class="dropdown-toggle text-decoration-none text-dark" data-bs-toggle="collapse" data-bs-target="#industries">Industries</a>
+                                    <div class="collapse form-text" data-bs-parent=".modal-body" id="industries">
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/healthcare">Healthcare and Life Sciences</a>
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/consumer-products">Consumer Products and Services</a>
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/financial-services">Financial Services</a>
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/industrials">Industrials</a>
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/media">Communications, Media, and Entertainment</a>
+                                        <a class="dropdown-item my-2" href="https://www.toptal.com/industry/technology">Technology</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item dropdown text-dark py-3">
+                                    <a class="text-decoration-none text-dark" href="https://www.toptal.com/community">Community</a>
+                                </li>
+                                <li class="list-group-item dropdown text-dark py-3">
+                                    <a class="text-decoration-none text-dark" href="https://www.toptal.com/blog">Blog</a>
+                                </li>
+                                <li class="list-group-item dropdown text-dark py-3 border-bottom">
+                                    <a class="text-decoration-none text-dark" href="https://www.toptal.com/about">About Us</a>
+                                </li>
+                                <br>
+                            </ul>
+                            <div class="text-center d-md-flex justify-content-md-between">
+                                <button class="btn border col-12 col-md-4 mb-2"><a href="https://www.toptal.com/talent/apply" class="text-decoration-none text-dark fw-semibold">Apply as a Freelancer</a></button>
+                                <br>
+                                <button class="btn hire col-12 col-md-3 mb-2"><a href="https://www.toptal.com/hire" class="text-decoration-none text-light fw-semibold">Hire Top Talent</a></button>
+                                <br>
+                                <button class="btn border col-12 col-md-4 mb-2"><a href="https://www.toptal.com/users/login" class="text-decoration-none text-dark fw-semibold">Log In</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <div class="d-flex flex-column bg-secondary text-center">
-        <div class="p-3 pt-0" style="height:36vh">
-            <p class="fs-2 m-3 mt-0 text-center">Hire the Top 3% of Freelance Talent®</p>
+    <div id="hero" class="d-flex flex-column text-center">
+        <div class="pt-0" style="height:36vh">
+            <p class="fs-2 text-center">Hire the Top 3% of Freelance Talent®</p>
             <p class="text-center"><small>Toptal is an exclusive network of the top freelance software developers, designers, finance experts, product managers, and project managers in the world. Top companies hire Toptal freelancers for their most important projects.</small></p>
             <button class="hire btn col-6">Hire top talent</button>
         </div>
@@ -43,11 +118,7 @@
     </div>
 
     <!--assetGallery-->
-    <!--<i class="fa-solid fa-calendar-check"></i>
-    <i class="fa-solid fa-pen-fancy"></i>
-    <i class="fa-solid fa-chart-line"></i>
-    <i class="fa-solid fa-code"></i>-->
-    <div class="">
+    <div class="overflow-hidden">
         <div class="row overflow-auto text-nowrap">
             <div class="col">
                 <div class="assetItem">
@@ -226,17 +297,17 @@
         <div class="d-flex flex-md-column">
             <div class="d-none d-md-block d-lg-none"><img src="./img/arrow-right.png" class=img-fluid alt=""></div>
             <div class="d-none d-lg-block"><img src="./img/arrow-to-right.png" class=img-fluid alt=""></div>
-            <div class="d-md-none"><img src="./img/arrow-down.png" style="height:80vh" alt=""></div>
-            <div class="d-md-flex text-left p-2">
-                <div class="mb-5 p-3">
+            <div id="problemArrowDiv" class="d-md-none"><img src="./img/arrow-down.png" class="problemArrow" alt=""></div>
+            <div class="d-md-flex text-left">
+                <div class="mb-4 p-2">
                     <p class="h2 mb-4">Talk to One of Our Industry Experts</p>
                     <p>An expert on our team will work with you to understand your goals, technical needs, and team dynamics.</p>
                 </div>
-                <div class="mb-5 p-3">
+                <div class="mb-4 p-2">
                     <p class="h2 mb-4">Work With Hand-Selected Talent</p>
                     <p>Within days, we'll introduce you to the right talent for your project. Average time to match is under 24 hours.</p>
                 </div>
-                <div class="mb-5 p-3">
+                <div class="mb-4 p-2">
                     <p class="h2 mb-4">The Right Fit, Guaranteed</p>
                     <p>Work with your new team member on a trial basis (pay only if satisfied), ensuring you hire the right people for the job.</p>
                 </div>

@@ -1,3 +1,38 @@
+/* INDEX SECTIONS:
+navbar
+hero section
+"slide"
+asset gallery
+Leverage World Class Talent
+Build AmazingTeams, On Demand
+Hiring Made Easy
+Meet Talent in Our Network
+Why Oraganizations Choose Toptal
+Hear From Our Clients
+Explore Trending Toptal Publications
+*/
+nav {
+    background-color: #d2d6e2;
+    /* top: 1px; */
+}
+nav.is-pinned {
+    background-color: white;
+} 
+.navlogo {
+    width: 116px;
+    height: 32px;
+}
+
+/* for navbar modal to work while nav class has "sticky-top" */
+.modal-backdrop {
+    position:unset !important;
+  }
+
+#hero {
+    background-color: #d2d6e2;
+}
+
+/* image sizing styles (does not include asset gallery, needs improvement[??]) || start */
 .icon {
     width: 100px;
     height: auto;
@@ -17,7 +52,9 @@
     width: 200px;
     height: 100%;
 }
-.hire {
+/* image sizing styles || end */
+
+.hire { /* hire button style */
     background-color: #00cc83;
     color: white;
 }
@@ -26,28 +63,25 @@
     background-color: #f6f8fb;
 }
 
-/* asset gallery */
-/* .assetList {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-} */
 
+/* asset gallery || start */
 .assetItem {
     display: inline-block;
-    inline-size: 50vw;
+    inline-size: 160px;
     margin-bottom: 0;
-    white-space: normal;
-    border: solid black;
+}
+
+.assetItem p {
+    font-size: small;
 }
 
 .assetImg {
     height: 23vh;
 }
-#talentCategories {
-    background-color: rgb(223, 223, 223);
-}
-/* style for "why organizations choose toptal */
+/* asset gallery || end */
+
+
+/* style for "why organizations choose toptal" || start */
 #bridgestoneWhy {
     height: 60vh;
     background-image: url("../img/bridgestonewhy.jpg");
@@ -125,7 +159,6 @@
     margin-top: 20px;
     margin-bottom: 70px;
     padding: 2px;
-    /* background-color: white; */
     width: 150px;
 }
 
@@ -136,6 +169,7 @@
     background-color: white;
     width: 150px;
 }
+/* style for "why organizations choose toptal" || end */
 
 .consumer {  /* image size for consumers || "hear from our clients" section */
     width: 50px;
@@ -162,14 +196,57 @@
 }
 /* author image display in publications || END*/
 
-@media (max-width: 767px) {
 
+/* Hiring Made Easy arrow-down || [6] media queries for the epic "problemArrow" */
+@media (max-width: 320px) {
+    .problemArrow {
+        margin-top: 50px;
+        height: 90vh;
+      
+    }
+}
+
+@media (min-width: 375px) {
+    .problemArrow {
+        margin-top: 0px;
+        height: 90vh;
+      
+    }
+}
+
+@media (min-width: 400px) {
+    .problemArrow {
+        margin-top: 30px;
+        height: 70vh;
+      
+    }
+}
+
+@media (min-width: 485px) {
+    .problemArrow {
+        margin-top: 0px;
+        height: 70vh;
+      
+    }
+}
+
+@media (min-width: 516px) {
+    .problemArrow {
+        margin-top: 0px;
+        height: 61vh;
+      
+    }
+}
+
+@media (min-width: 749px) {
+    .problemArrow {
+        margin-top: 0px;
+        height: 67vh;
+      
+    }
 }
 
 @media (min-width: 768px) {
-    /* .publicationImg {
-        height: 170px;
-    } */
     .publication {
         width: 500px;
     }
