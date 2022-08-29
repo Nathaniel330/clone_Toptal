@@ -42,18 +42,33 @@ function carousel2() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel2, 4000); 
 }
+
+// var assetSlide = 0;
+// assetCarousel();
+
+// function assetCarousel() {
+//     var istart;
+//     var y = document.getElementsByClassName("assetImage");
+//     for (istart = 0; istart < y.length; istart++) {
+//         y[istart].style.display = "none"; 
+//     }
+//     assetSlide++;
+//     if (assetSlide > y.length) {assetSlide = 1} 
+//     y[assetSlide-1].style.display = "block"; 
+//     setTimeout(assetCarousel, 4000); 
+// }
 /* end */
 
 
 /* asset display */
-function currentSlide(n) {
-    showSlides(assetIndex = n);
+function display(n) {
+    displayAuto(assetIndex = n);
     console.log("clicked");
 }
 let assetIndex = 1;
-showSlides(assetIndex);
+displayAuto(assetIndex);
 
-function showSlides(n) {
+function displayAuto(n) {
     let i;
     let asset = document.getElementsByClassName("asset");
     if (n > asset.length) {assetIndex = 1}
