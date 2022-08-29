@@ -1,12 +1,19 @@
-/* to check if sticky nav activated */
-const el = document.querySelector("nav")
-const observer = new IntersectionObserver( 
-  ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
-  { threshold: [1] }
-);
+/* to check if sticky-top nav activated */
+var navbar = document.querySelector('nav')
 
-observer.observe(el);
+window.onscroll = function() {
 
+  // pageYOffset or scrollY
+  if (window.pageYOffset > 500) {
+    navbar.classList.add('scrolled')
+  } else {
+    navbar.classList.remove('scrolled')
+  }
+}
+/* end */
+
+
+/* trusted by leading brands carousel */
 var slideIndex = 0;
 carousel();
 
@@ -35,8 +42,10 @@ function carousel2() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel2, 4000); 
 }
+/* end */
 
 
+/* asset display */
 function currentSlide(n) {
     showSlides(assetIndex = n);
     console.log("clicked");
