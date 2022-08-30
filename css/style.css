@@ -464,7 +464,16 @@ footer li {
     .publication {
         width: 241.8px;
     }
+    .meet {
+        width: 50%;
+    }
 }
+@media (max-width: 1016px) {
+    .talentCategoriesThirdForm {
+        display: none;
+    }
+}
+
 @media (min-width: 1017px) {
     .talentCategoriesSecondForm {
         display: none;
