@@ -42,29 +42,15 @@ function carousel2() {
     x[slideIndex-1].style.display = "block"; 
     setTimeout(carousel2, 4000); 
 }
-
-// var assetSlide = 0;
-// assetCarousel();
-
-// function assetCarousel() {
-//     var istart;
-//     var y = document.getElementsByClassName("assetImage");
-//     for (istart = 0; istart < y.length; istart++) {
-//         y[istart].style.display = "none"; 
-//     }
-//     assetSlide++;
-//     if (assetSlide > y.length) {assetSlide = 1} 
-//     y[assetSlide-1].style.display = "block"; 
-//     setTimeout(assetCarousel, 4000); 
-// }
 /* end */
 
 
 /* asset display */
 function display(n) {
+  console.log("clicked");
     displayAuto(assetIndex = n);
-    console.log("clicked");
 }
+
 let assetIndex = 1;
 displayAuto(assetIndex);
 
@@ -76,5 +62,9 @@ function displayAuto(n) {
     for (i = 0; i < asset.length; i++) {
       asset[i].style.display = "none";
     }
-    asset[assetIndex-1].style.display = "block";
+    asset[assetIndex-1].style.display = "block"; 
+
+    assetIndex++;
+    if (assetIndex > asset.length) {assetIndex = 1} 
+    setTimeout(displayAuto, 7000); 
 }

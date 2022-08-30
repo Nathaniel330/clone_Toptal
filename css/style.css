@@ -446,10 +446,31 @@ footer li {
     .footerLast5 {
         display: none;
     }
+    #uscWhy, #csrWhy, #adcrushWhy, #cavaliersWhy, #bridgestoneWhy {
+        width: 30vw;
+    }
+    .bridgeCavs, .uscAdcrush, .motoSalesMsoft {
+        gap: 40px;
+        justify-content: space-evenly;
+    }
+    .why {
+        gap: 40px;
+    }
+    #motoWhy, #salesWhy, #msoftWhy {
+        width: 20vw;
+    }
 }
 @media (min-width: 992px) {
     .publication {
         width: 241.8px;
+    }
+}
+@media (min-width: 1017px) {
+    .talentCategoriesSecondForm {
+        display: none;
+    }
+    .talentCategoriesThirdForm {
+        display: block;
     }
 }
 
