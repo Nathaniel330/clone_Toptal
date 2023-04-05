@@ -3,7 +3,9 @@ My first project in a coding boot camp.
 
 After a month of learning web development, since I cannot think of a concept for my project, I just tried to copy the layout of a website I stumbled upon. [[ Toptal ](https://www.toptal.com/)]
 
-Live: [clone_Toptal](https://nathaniel330.github.io/clone_Toptal/)
+Link to Project: [https://nathaniel330.github.io/clone_Toptal/](https://nathaniel330.github.io/clone_Toptal/)
+![clone_Toptal](https://user-images.githubusercontent.com/110211889/230150377-ae44c1fd-756a-416c-852a-e119ba7d935b.gif)
+
 
 
 <br>
